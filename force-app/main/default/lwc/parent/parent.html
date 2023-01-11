@@ -1,0 +1,21 @@
+<template>
+  <lightning-card title="Parent" icon-name="custom:custom53">
+    <p class="slds-align_absolute-center slds-text-heading_large">
+      <span>選択した子コンポーネント： {selected}</span>
+    </p>
+    <div class="slds-m-top_xx-large slds-align_absolute-center">
+      <c-child
+        name="Child A"
+        onselect={handleSelect}
+        class="slds-m-horizontal_small"
+      >
+      </c-child>
+      <c-child
+        name="Child D"
+        onselect={handleSelect}
+        class="slds-m-horizontal_small"
+      >
+      </c-child>
+    </div>
+  </lightning-card>
+</template>
